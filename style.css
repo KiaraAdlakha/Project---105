@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(lightpink 0%,deeppink 100%);
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive ;
+}
+.person
+{
+    font-size: 20px; ;
+}
+#model
+{
+    font-size: 30px;
+}
+#heading
+{
+    font-size: 60px;
+}
+#camera
+{
+    border: 2px black  dashed;
+    width: 350px;
+    height: 300px;
+}

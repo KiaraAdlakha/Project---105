@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Family Recognition App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+<h1 id="heading">Family Recognition App</h1>
+<label id="model">Model is trained to identify the following people</label>
+<br>
+<label class="person">Father (Kunal Adlakha)</label>
+<hr>
+<label class="person">Mother (Namita Adlakha)</label>
+<hr>
+<label class="person">Myself (Kiara Adlakha)</label>
+<hr>
+<label class="person">Sister (Adira Adlakha)</label>
+<hr>
+<label>Webcam View - </label>
+<br><br>
+<div id="camera"></div>
+<br><br>
+<div id="image"></div>
+<br><br>
+<button class="btn btn-warning" onclick="take_snapShot()">Capture Image</button>
+<br><br>
+<button class="btn btn-success" onclick="check()">Identify Person</button>
+<br><br>
+<label id=result></label>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
